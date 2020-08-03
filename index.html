@@ -5,18 +5,20 @@
 	</head>
 
 	<body>
-		<h1>MY PORTFOLIO</h1>
-	<p id="data">I have good knowledge in <br> languages like <em>C, Java, <br> and Python </em>. I am good at <br> <em> HTML, CSS, and JS </em>.</p>
-	<div id="linkss">
-	<p><a class="links" href="index.html" id="home"> Home</a></p>
-	<p><a class="links" id="about" href="about.html"> About</a></p>
-	<p><a class="links" id="acad" href="acad.html"> Academic Qualifications</a></p>
-	<p><a class="links" id="skills" href="skills.html"> Skills</a></p>
-	<p><a class="links" id="cm" href="cm.html"> Contact Me</a></p>
+	
+	<h1>MY PORTFOLIO</h1>
+	<p id="info">Sai Venkat</p>
+	<p id="aboutme">an upcoming UI Designer and a Web Developer</p>
+	<div id="links">
+	<p><a href="index.html" id="home"> Home</a></p>
+	<p><a id="about" href="about.html"> About</a></p>
+	<p><a id="acad" href="acad.html"> Academic Qualifications</a></p>
+	<p><a id="skills" href="skills.html"> Skills</a></p>
+	<p><a id="cm" href="cm.html"> Contact Me</a></p>
 	</div>
 	<p id="copyrights">
 		copyrights 2002-2020 &#169; Sai Venkat 
-	</p>
+	</p>	
 	<style>
 	body{
 	background-image: url("paper.jpg");
@@ -33,36 +35,38 @@
 			color: #6A5B5B;
 			text-align: center;
 		}
-	.links:link, .links:visited {
- 	background-color: lightgrey;
+		#info{
+			font-size: 6.74vw;
+			color: #501E1E;
+			text-align:center;
+			position: absolute;
+			top: 20%;
+			left: 55%;
+		}
+		#aboutme{
+			font-size: 2.53vw;
+			position: absolute;
+			top: 45%;
+			left: 45%;
+			text-align: center;
+		}
+	a:link, a:visited {
+ 	background-color: #6A5B5B;
     color: #BDB0B0;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
      }
-     #data{
-     	font-size: 2.53vw;
-     	position: absolute;
-     	top: 30%;
-     	left: 55%;
-     	background-color: #b3afaf;
-     	border-top-left-radius: 15px; 
-     	border-top-right-radius:15px;
-     	border-bottom-left-radius:15px; 
-     	border-bottom-right-radius: 15px;
-     	padding: 20px;
-     	box-shadow: 10px 10px #6b6868;
-     }
-     #linkss{
+     #links{
      	position: relative;
      	top:2.6vw;
      }
-     #college{
-     	color: black;
-     	text-decoration: none;
-     }
-      #skills{ 
+		p{
+			text-align: left;
+			font-size: 1.68vw;
+		}
+		 #home{ 
 	background-color: #97233E;
     color: #BDB0B0;
     padding: 14px 25px;
@@ -70,10 +74,6 @@
     text-decoration: none;
     display: inline-block;
      }
-		p{
-			text-align: left;
-			font-size: 1.68vw;
-		}
 		#copyrights{
 			font-size: 0.76vw;
 			text-align: center;
@@ -81,15 +81,11 @@
 			left: 45%;
 			top: 90%;
 		}
-		.links:link,.links:visited {
-  background-color: #6A5B5B;
-}
-
-.links:hover {
+a:hover {
   background-color: #F5E5E9;
 }
 
-.links:active {
+a:active {
   background-color: #d18473;
 } 
 }
@@ -106,6 +102,7 @@
 			position: absolute;
 			top: 17%;
 			left: 3.5%;
+			background-color: #97233E;
 		}
 		#about
 		{
@@ -124,7 +121,6 @@
 			position: absolute;
 			top: 17%;
 			left: 66.5%;
-			background-color: #97233E;
 		}
 		#cm
 		{
@@ -132,8 +128,8 @@
 			top: 17%;
 			left: 78%;
 		}
-		.links:link, .links:visited {
- 	background-color: #6A5B5B;
+		a:link, a:visited {
+ 	background-color: lightgrey;
  	border-radius: 5px;
  	padding: 4px 4px;
     color: #BDB0B0;
@@ -141,35 +137,41 @@
     text-decoration: none;
     display: inline-block;
      }
-     #data{
-     	font-size: 200%;
-     	background-color: #b3afaf;
-     	border-top-left-radius: 15px; 
-     	border-top-right-radius:15px;
-     	border-bottom-left-radius:15px; 
-     	border-bottom-right-radius: 15px;
-     	padding: 20px;
-     	box-shadow: 10px 10px #6b6868;
-     	position: absolute;
-     	top: 35%;
-     	left: 8%;
-     	font-family: karla;
-     	line-height: 1.5;
-     }
-     .links:hover {
+		a:link,a:visited {
+  background-color: #6A5B5B;
+}
+
+a:hover {
   background-color: #F5E5E9;
 }
 
-.links:active {
+a:active {
   background-color: #d18473;
 } 
-     #copyrights
+#info
+{
+	position: absolute;
+	top: 25%;
+	left: 11%;
+	font-size: 500%;
+	color: #501E1E;
+}
+#aboutme
+{
+	position: absolute;
+	top: 47%;
+	left: 5%;
+	right: 5%;
+	font-size: 200%;
+	text-align: center;
+}
+#copyrights
 {
 	position: absolute;
 	top: 90%;
 	left: 26%;
 }
 }
-	</style>
+</style>
 	</body>
 </html>
